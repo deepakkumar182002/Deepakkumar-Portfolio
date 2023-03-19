@@ -3,35 +3,49 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-    /* color: white; */
 }
 body{
     margin: 0;
     padding: 0;
 }
 .container{
-    /* background-color: rgb(14, 10, 32); */
     width: 100%;
-    /* height: 100v; */
 }
 .navigation{
-    background: #0e0a20;
+    position: fixed;
     width: 100%;
     height: 100px;
+    z-index: 100;
 }
 .nav-services{
     display: flex;
-    /* flex-direction: row; */
-    /* background: #d7a7a7; */
     position: absolute;
     right: 250px ;
+    margin-top: 40px;
 }
 .nav-services li{
     list-style: none ;
     position: relative;
-    font-size: 20px;
-    margin: 10px 15px ;
-    padding: 30px 30px;
+    font-size: 1.4rem;
+    margin-left: 40px;
+}
+.nav-services li::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    border-radius: 10px;
+    box-shadow: 0 0 9px 1px #fff;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+.nav-services li:hover:after{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 a{
     text-decoration: none;
@@ -46,6 +60,30 @@ a span#logo{
     text-decoration: none;
     padding: 30px 50px ;
 }
+/* logo animation */
+#logo::after{
+    content: '';
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    background: #5541ac;
+    border-left: 5px solid #fff;
+    margin: 0px 10px ;
+    animation: run 1s ease infinite;
+    animation: back 2s ease-out infinite reverse;
+}
+@keyframes run{
+    100%{
+        transform: translateX(-120px);
+    }
+}
+@keyframes back{
+    50%{
+        transform: translateX(-120px);
+    }
+}
+
+/* center content part */
 .center-part{
     position: relative;
     height: 100vh;  
@@ -54,18 +92,37 @@ a span#logo{
     position: relative;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-
 
 }
 .left-container{
     background:#5541ac ;
-    height: 500px;
+    height: 100vh;
     width: 800px;
     
 }
 .right-container{
     background:#4f37bb ;
-    height: 500px;
+    height: 100vh;
+    width: 800px;
+}
+.bottum-center-part{
+    position: relative;
+    height: 100vh;  
+    width: 100%;
+    background: #7f6fc2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 150;
+}
+.bottom-left-container{
+    background:#5541ac ;
+    height: 100vh;
+    width: 800px;
+    
+}
+.bottum-right-container{
+    background:#4f37bb ;
+    height: 100vh;
     width: 800px;
 }
