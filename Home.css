@@ -102,26 +102,24 @@ a span#logo{
 }
 
 /* center content part */
-.second-container{
+.first-container{
     background: url(./images/high-angle-shot-beautiful-cityscape-sunset-new-york-city-usa.jpg);
-    /* filter: blur(1px); */
+    filter: blur(1px);
     background-position: center;
     background-size: cover;
     position: relative;
-    /* height: 100vh;  
-    width: 100%; */
     position: relative;
     display: flex;
     align-items: center;
 
 }
-.S-left-container{
+.f-left-container{
     /* background:#5541ac ; */
     height: 100vh;
     width: 800px;
     
 }
-.S-right-container{
+.f-right-container{
     /* background:#4f37bb ; */
     height: 100vh;
     width: 800px;
@@ -134,39 +132,55 @@ hr{
     /* background: radial-gradient(#eaff00,#80ff00,#009dff,#c800ff); */
     /* background: grad; */
 }
-.third-container{
+.second-container{
     position: relative;
     height: 100vh;  
     width: 100%;
-    background: #7f6fc2;
+    /* background: #7f6fc2; */
     position: relative;
     display: flex;
     align-items: center;
     z-index: 150;
 }
-.th-left-container{
-    background:#5541ac ;
+.s-left-container{
+    /* background:#5541ac ; */
     height: 100vh;
     width: 800px;
     
 }
-.th-right-container{
-    background:#4f37bb ;
+.s-right-container{
     height: 100vh;
     width: 800px;
     display: flex;
     position: relative;
+    z-index: 100;
 }
-.th-right-container h2{
-    position: relative;
+.s-right-container::after{
+    content: '';
+    background:url(/images/Deepak\ photo.jpg);
+    height: 100vh;
+    width: 800px;
+    filter: blur(10px);
+    backdrop-filter: invert(40%);
+    z-index: 0;
+    opacity: 80%;
+    
+}
+.s-right-container h2{
+    position: absolute;
     top: 50px;
     left: 80px;
     font-size: 3rem;
     font-weight: 500;
+    z-index: 100;
     
 }
-.th-right-container h2 b{
+.s-right-container h2 b{
     /* color: #04f5f9; */
+    z-index: 100;
+    left: 0px;
+    top: 50px;
+    font-size: 100px;
     font-weight: 1000;
     color: transparent;
     -webkit-text-stroke: 2px #00fbff;
@@ -180,36 +194,41 @@ hr{
         background-position: 2000px;
     }
 }
-/* .th-right-container h2 b::after{
-    content: '';
-    position: relative;
-    background: url(/images/line\ background.gif);
 
-} */
-.th-right-container p{
+.s-right-container p{
     position: absolute;
-    top: 150px;
+    top: 260px;
     font-size: 1.2rem;
     left: 80px;
+    z-index: 100;
 
 }
 
 /* forth container for user detailes */
-.forth-container{
+.third-container{
     width: 100%;
     height: 100vh;
-    background: #c800ff;
+    background: #021029;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .overview{
-    background: #917798;
+    background: #ffffff7e;
+    color: white;
+    backdrop-filter: blur(10px);
+    /* opacity: 60%; */
     height: 500px;
     width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 12px #b9baba75;
     display: flex;
+    position:absolute;
     flex-direction: column;
     align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+
 }
 #dpk-img{
     height: 150px;
@@ -227,4 +246,64 @@ hr{
     position: relative;
     top: 40px;
 }
-
+.third-container .circle1{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: #00fbff;
+    position: relative;
+    top: -247px;
+    left: 96px;
+}
+.third-container .circle2{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background: #ff9900;
+    top: 150px;
+    left: -170px;
+    
+}
+.third-container .circle3{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background: #ff00c8;
+    top: -250px;
+    left: 400px;
+    
+}
+.third-container .circle4{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: #7bff00;
+    position: relative;
+    top: 193px;
+    left: 300px;
+    
+}
+.third-container .circle5{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background: #ff0000;
+    position: relative;
+    top: 200px;
+    left: -402px;
+    
+}
+.third-container .circle6{
+    height: 90px;
+    width:90px;
+    border-radius: 100%;
+    background: #eefe0c;
+    position: relative;
+    top: -87px;
+    left: -990px;
+    
+}
+        
+        
