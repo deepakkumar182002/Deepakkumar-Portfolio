@@ -102,7 +102,7 @@ a span#logo{
 }
 
 /* center content part */
-.center-part{
+.second-container{
     background: url(./images/high-angle-shot-beautiful-cityscape-sunset-new-york-city-usa.jpg);
     /* filter: blur(1px); */
     background-position: center;
@@ -115,13 +115,13 @@ a span#logo{
     align-items: center;
 
 }
-.left-container{
+.S-left-container{
     /* background:#5541ac ; */
     height: 100vh;
     width: 800px;
     
 }
-.right-container{
+.S-right-container{
     /* background:#4f37bb ; */
     height: 100vh;
     width: 800px;
@@ -134,7 +134,7 @@ hr{
     /* background: radial-gradient(#eaff00,#80ff00,#009dff,#c800ff); */
     /* background: grad; */
 }
-.bottum-center-part{
+.third-container{
     position: relative;
     height: 100vh;  
     width: 100%;
@@ -144,19 +144,87 @@ hr{
     align-items: center;
     z-index: 150;
 }
-.bottom-left-container{
+.th-left-container{
     background:#5541ac ;
     height: 100vh;
     width: 800px;
     
 }
-.bottum-right-container{
+.th-right-container{
     background:#4f37bb ;
     height: 100vh;
     width: 800px;
+    display: flex;
+    position: relative;
 }
-.firts-Section{
+.th-right-container h2{
+    position: relative;
+    top: 50px;
+    left: 80px;
+    font-size: 3rem;
+    font-weight: 500;
+    
+}
+.th-right-container h2 b{
+    /* color: #04f5f9; */
+    font-weight: 1000;
+    color: transparent;
+    -webkit-text-stroke: 2px #00fbff;
+    background: url(/images/line\ background.gif);
+    -webkit-background-clip: text;
+    position: absolute;
+    animation: run 20s infinite linear;
+}
+@keyframes run{
+    100%{
+        background-position: 2000px;
+    }
+}
+/* .th-right-container h2 b::after{
+    content: '';
+    position: relative;
+    background: url(/images/line\ background.gif);
+
+} */
+.th-right-container p{
+    position: absolute;
+    top: 150px;
+    font-size: 1.2rem;
+    left: 80px;
+
+}
+
+/* forth container for user detailes */
+.forth-container{
     width: 100%;
     height: 100vh;
     background: #c800ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.overview{
+    background: #917798;
+    height: 500px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#dpk-img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    position: relative;
+    top: 10px ;
+    text-align: center;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
