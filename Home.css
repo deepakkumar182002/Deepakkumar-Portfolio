@@ -143,9 +143,10 @@ hr{
     z-index: 150;
 }
 .s-left-container{
-    /* background:#5541ac ; */
+    background:#5541ac ;
     height: 100vh;
     width: 800px;
+    z-index: 100;
     
 }
 .s-right-container{
@@ -214,7 +215,7 @@ hr{
     justify-content: center;
 }
 .overview{
-    background: #ffffff7e;
+    background: #ffffff65;
     color: white;
     backdrop-filter: blur(10px);
     /* opacity: 60%; */
@@ -250,60 +251,102 @@ hr{
     height: 200px;
     width: 200px;
     border-radius: 100%;
-    background: #00fbff;
+    box-shadow: 0 0 50px 0px #fff;
+    background: radial-gradient(#bfedef, #75fdff,#06c7ca) ;
     position: relative;
-    top: -247px;
+    top: -460px;
     left: 96px;
+    z-index: 90;
+    animation: circles-sky  25s ease-in infinite ;
+}
+@keyframes circles-sky {
+    50%{
+        transform: translateY(100vh);
+    }
+    
 }
 .third-container .circle2{
     position: relative;
     height: 100px;
     width: 100px;
     border-radius: 100%;
-    background: #ff9900;
+    /* box-shadow: 0 0 50px 0px #fff; */
+    background: radial-gradient(#fbc640,#fba728,#ff8000) ;
     top: 150px;
     left: -170px;
-    
+    animation: circles-O  18s ease-in infinite reverse  ;
+}
+@keyframes circles-O {
+    50%{
+        transform: translateX(110vh);
+    }
 }
 .third-container .circle3{
     position: relative;
     height: 150px;
     width: 150px;
     border-radius: 100%;
-    background: #ff00c8;
+    /* box-shadow: 0 0 50px 0px #fff; */
+    background:radial-gradient(#ff98e9,#f85dd6,#e004b1);
     top: -250px;
-    left: 400px;
-    
+    left: 500px;
+    animation: circles-P  20s ease-in infinite reverse  ;
+}
+@keyframes circles-P {
+    50%{
+        transform: translateX(-150vh);
+    }
 }
 .third-container .circle4{
     height: 300px;
     width: 300px;
     border-radius: 100%;
-    background: #7bff00;
+    /* box-shadow: 0 0 50px 0px #fff; */
+    background: radial-gradient(#d8fab8,#a5ff51,#37e303);
     position: relative;
     top: 193px;
-    left: 300px;
-    
+    left: 460px;
+    animation: circles-G  30s ease-in infinite reverse  ;
+}
+@keyframes circles-G {
+    50%{
+        transform: translateX(-150vh);
+    }
 }
 .third-container .circle5{
     height: 70px;
     width: 70px;
     border-radius: 100%;
-    background: #ff0000;
+    /* box-shadow: 0 0 50px 0px #fff; */
+    background: radial-gradient(#ffc3c3,#ff5353,#d00000);
     position: relative;
-    top: 200px;
+    top: -100px;
     left: -402px;
-    
+    animation: circles-R  25s ease-in infinite ;
+}
+@keyframes circles-R {
+    50%{
+        transform: translateX(-100vh);
+    }20%{
+        transform: translateY(20vw);
+    }
 }
 .third-container .circle6{
     height: 90px;
     width:90px;
     border-radius: 100%;
-    background: #eefe0c;
+    /* box-shadow: 0 0 50px 0px #fff; */
+    background:radial-gradient(#fdffe8,#f5ff6d,#d8e701);
     position: relative;
-    top: -87px;
+    top: -400px;
     left: -990px;
+    animation: circles-Y  20s ease-in infinite reverse  ;
     
+}
+@keyframes circles-Y {
+    50%{
+        transform: translateY(100vh);
+    }
 }
         
         
