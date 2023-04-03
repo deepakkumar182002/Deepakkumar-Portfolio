@@ -76,21 +76,24 @@ a span#logo{
     font-size: 40px;
     font-weight: 600;
     text-decoration: none;
-    padding: 30px 50px ;
+    margin: 30px 60px ;
+
 }
 /* logo animation */
 #logo::after{
     content: '';
     height: 50px;
     width: 150px;
-    position: absolute;
-    /* background:#4f37b; */
-    border-left: 5px solid #fff;
-    margin: 0px 10px ;
-    animation: run 1s ease infinite;
-    animation: back 2s ease-out infinite reverse;
+    position: fixed;
+    background:transparent; 
+    border: 5px solid #fff;
+    border-radius:10px;
+    margin: -3px -133px ;
+    /* animation: run 1s ease infinite;
+    animation: back 2s ease-out infinite reverse; */
+
 }
-@keyframes run{
+/* @keyframes run{
     100%{
         transform: translateX(-120px);
     }
@@ -99,14 +102,15 @@ a span#logo{
     50%{
         transform: translateX(-120px);
     }
-}
+} */
 
 /* center content part */
 .first-container{
-    background: url(./images/high-angle-shot-beautiful-cityscape-sunset-new-york-city-usa.jpg);
-    filter: blur(1px);
-    background-position: center;
-    background-size: cover;
+    /* background: url(./images/high-angle-shot-beautiful-cityscape-sunset-new-york-city-usa.jpg); */
+    /* filter: blur(1px); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    background: linear-gradient( #000000, #020d20, #02172d );
     position: relative;
     position: relative;
     display: flex;
@@ -114,13 +118,12 @@ a span#logo{
 
 }
 .f-left-container{
-    /* background:#5541ac ; */
+
     height: 100vh;
     width: 800px;
     
 }
 .f-right-container{
-    /* background:#4f37bb ; */
     height: 100vh;
     width: 800px;
 }
@@ -136,18 +139,16 @@ hr{
     position: relative;
     height: 100vh;  
     width: 100%;
-    /* background: #7f6fc2; */
     position: relative;
     display: flex;
     align-items: center;
     z-index: 150;
+    background: #02172d;
 }
 .s-left-container{
-    background:#5541ac ;
     height: 100vh;
     width: 800px;
     z-index: 100;
-    
 }
 .s-right-container{
     height: 100vh;
@@ -158,14 +159,8 @@ hr{
 }
 .s-right-container::after{
     content: '';
-    background:url(/images/Deepak\ photo.jpg);
     height: 100vh;
     width: 800px;
-    filter: blur(10px);
-    backdrop-filter: invert(40%);
-    z-index: 0;
-    opacity: 80%;
-    
 }
 .s-right-container h2{
     position: absolute;
@@ -174,10 +169,10 @@ hr{
     font-size: 3rem;
     font-weight: 500;
     z-index: 100;
+    color: #fff;
     
 }
 .s-right-container h2 b{
-    /* color: #04f5f9; */
     z-index: 100;
     left: 0px;
     top: 50px;
@@ -199,10 +194,12 @@ hr{
 .s-right-container p{
     position: absolute;
     top: 260px;
-    font-size: 1.2rem;
-    left: 80px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    left: -46px;
     z-index: 100;
-
+    padding: 7px 130px ;
+    color: #fff;
 }
 
 /* forth container for user detailes */
