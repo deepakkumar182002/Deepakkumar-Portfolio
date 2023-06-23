@@ -1,70 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="/Home.css" />
-    <script src="./Home.html"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="./heex.css"> -->
-  </head>
-  <body>
-    <div class="container">
-      <nav class="navigation scroll">
-          <a href="#"><span id="logo">Deep.</span></a>
-          <ul class="nav-services">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-        <ul class="icons">
-          <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-        </ul>
-        </nav>
-        <section class="first-container">
-          <img class="f-background-img" src="/images/high-angle-shot-beautiful-cityscape-sunset-new-york-city-usa.jpg" alt="">
-          <h2 class="intro-text">
-            I am Deepak kumar
-          </h2>
-          <div class="animated-text">
-
-          </div>
-          <!-- <div class="f-left-container"></div>
-          <div class="f-right-container"></div> -->
-        </section>
-        <hr>
-        <section class="second-container">
-          <div class="s-left-container"></div>
-          <div class="s-right-container">
-            <h2>Welcome to the <b> DeepGFX.</b></h2>
-            <p>Hello i am Deepak kumar and. I am a graphics designer and web designer. i am a two year experience in graphics design and website design. I have create interactice and creative templates.</p>
-          </div>
-        </section>
-        <section class="third-container">
-          <div class="circle1"></div>
-          <div class="circle2"></div>
-          <div class="circle3"></div>
-          <div class="circle4"></div>
-          <div class="circle5"></div>
-          <div class="circle6"></div>
-          <div class="overview">
-            <img src="/images/Deepak photo.jpg" id="dpk-img" width="150px" height="150px" alt="Deepak">
-            <div class="text-content">
-              <h2>Deepak kumar</h2>
-              <p>Hello everyone i am a graphics designer and web designer</p>
-              <p>and i am create interactive and creative websites and templates</p>
-            </div>
-          </div>
-        </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="/Home.css" />
+  <script src="./Home.html"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="./heex.css"> -->
+</head>
+<body>
+  <!-- jquery animation -->
+  <script>
+    // (function ($) {
+    //   $(document).ready(function () {
+    //     $(window).scroll(function () {
+    //       if ($(this).scrollTop() > 10) {
+    //         $(".navigation").addClass("active");
+    //       } else {
+    //         $(".navigation").removeClass("active");
+    //       }
+    //     });
+    //   });
+    // })(jQuery);
+    (function ($) {
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 10) {
+            $('.header').addClass('active');
+          } else {
+            $('.header').removeClass('active');
+          }
+        });
+      });
+    })(jQuery);
+  </script>
+  <div class="container">
+    <div class="header fixed">
     </div>
+    <nav class="navigation scroll">
+      <a href="#"><span id="logo">Deep.</span></a>
+      <ul class="nav-services">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#overview">About</a></li>
+      </ul>
+      <ul class="icons">
+        <li>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="first-container">
+      <img class="f-background-img" src="/images/backgroun image.jpg" alt="" />
+      <h2 class="intro-text">I am Deepak kumar</h2>
+      <div class="animated-text"></div>
+      <!-- <div class="f-left-container"></div>
+          <div class="f-right-container"></div> -->
+    </section>
+    <hr />
+    <section class="second-container">
+      <div class="s-left-container"></div>
+      <div class="s-right-container">
+        <h2>Welcome to the <b> DeepGFX.</b></h2>
+        <p>
+          Hello i am Deepak kumar and. I am a graphics designer and web
+          designer. i am a two year experience in graphics design and website
+          design. I have create interactice and creative templates.
+        </p>
+      </div>
+    </section>
+    <section class="third-container">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      <div class="circle4"></div>
+      <div class="circle5"></div>
+      <div class="circle6"></div>
+      <div class="overview" id="overview">
 
-    <script src="./home.js"></script>
-  </body>
+        <div class="img-details">
+          <img src="/images/Deepak photo.jpg" id="dpk-img" width="150px" height="150px" alt="Deepak" />
+          <ul class="prsonal-info">
+            <li><span>Name : </span> Deepak kumar</li>
+            <li><span>Profile :</span> Software developer</li>
+            <li><span>Email :</span> kumar041232@gmai.com</li>
+            <li><span>Phone :</span> ..........</li>
+          </ul>
+        </div>
+        <div class="language-info">
+          <div class="skills">Skills</div>
+          <div class="icon-c"> 
+            <div style="color: rgb(255, 102, 0);" class="L-icon" id="icons1">
+              <i class="fa-brands fa-html5 fa-flip"></i>
+              <span>HTML</span>
+            </div>
+            
+            <div style="color: rgb(0, 140, 255);" class="L-icon" id="icons2">
+              <i class="fa-brands fa-css3-alt fa-flip"></i>
+              <span>CSS</span>
+            </div>
+          <div style="color: rgb(236, 189, 3);" class="L-icon" id="icons3">
+            <i class="fa-brands fa-js fa-flip"></i>
+            <span>Javascript</span>
+
+          </div>
+          <div style="color: rgb(122, 182, 219);" class="L-icon" id="icons4">
+            <i class="fa-brands fa-quinscape fa-flip"></i>
+            <span>jQuery</span>
+
+          </div>
+          <div style="color: rgb(207, 88, 8);" class="L-icon" id="icons5">
+            <i class="fa-brands fa-git-alt fa-flip"></i>
+            <span>Git</span>
+          </div>
+          <div class="L-icon" id="icons6">
+            <i class="fa-brands fa-square-github fa-flip"></i>
+            <span>GitHub</span>
+          </div>
+
+          <!-- </div>
+          <div class="L-icon" id="icons7">
+            <i class="fa-brands fa-quinscape fa-flip"></i>
+            <span>jQuery</span>
+
+          </div> -->
+        </div>
+      </section>
+      <!-- <div class="text-content">
+            <h2>Deepak kumar</h2>
+            <p>Hello everyone i am a graphics designer and web designer</p>
+            <p>
+              and i am create interactive and creative websites and templates
+            </p>
+          </div> -->
+    <section class="forth-container">
+
+
+    </section>
+  </div>
+
+  <script src="./home.js"></script>
+</body>
 </html>
