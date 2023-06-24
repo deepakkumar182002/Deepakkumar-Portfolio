@@ -36,6 +36,14 @@
         });
       });
     })(jQuery);
+
+    // for scrolling the perticuller id
+    $('li').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
   </script>
   <div class="container">
     <div class="header fixed">
@@ -102,44 +110,45 @@
         </div>
         <div class="language-info">
           <div class="skills">Skills</div>
-          <div class="icon-c"> 
+          <div class="icon-c">
             <div style="color: rgb(255, 102, 0);" class="L-icon" id="icons1">
               <i class="fa-brands fa-html5 fa-flip"></i>
               <span>HTML</span>
             </div>
-            
+
             <div style="color: rgb(0, 140, 255);" class="L-icon" id="icons2">
               <i class="fa-brands fa-css3-alt fa-flip"></i>
               <span>CSS</span>
             </div>
-          <div style="color: rgb(236, 189, 3);" class="L-icon" id="icons3">
-            <i class="fa-brands fa-js fa-flip"></i>
-            <span>Javascript</span>
+            <div style="color: rgb(236, 189, 3);" class="L-icon" id="icons3">
+              <i class="fa-brands fa-js fa-flip"></i>
+              <span>Javascript</span>
 
-          </div>
-          <div style="color: rgb(122, 182, 219);" class="L-icon" id="icons4">
-            <i class="fa-brands fa-quinscape fa-flip"></i>
-            <span>jQuery</span>
+            </div>
+            <div style="color: rgb(122, 182, 219);" class="L-icon" id="icons4">
+              <i class="fa-brands fa-quinscape fa-flip"></i>
+              <span>jQuery</span>
 
-          </div>
-          <div style="color: rgb(207, 88, 8);" class="L-icon" id="icons5">
-            <i class="fa-brands fa-git-alt fa-flip"></i>
-            <span>Git</span>
-          </div>
-          <div class="L-icon" id="icons6">
-            <i class="fa-brands fa-square-github fa-flip"></i>
-            <span>GitHub</span>
-          </div>
+            </div>
+            <div style="color: rgb(207, 88, 8);" class="L-icon" id="icons5">
+              <i class="fa-brands fa-git-alt fa-flip"></i>
+              <span>Git</span>
+            </div>
+            <div class="L-icon" id="icons6">
+              <i class="fa-brands fa-square-github fa-flip"></i>
+              <span>GitHub</span>
+            </div>
 
-          <!-- </div>
-          <div class="L-icon" id="icons7">
-            <i class="fa-brands fa-quinscape fa-flip"></i>
-            <span>jQuery</span>
+            <div class="about-container">
+              <h2 class="about-text">About me</h2>
+              <p class="p-text">
+                hey guys. I am Deepak kumar. I am a web designer and front-end developer, creating responsive, attractive, animated websites.
+I am two years of experience in web design, and I have worked in many projects, 
+              </p>
 
-          </div> -->
-        </div>
-      </section>
-      <!-- <div class="text-content">
+            </div>
+    </section>
+    <!-- <div class="text-content">
             <h2>Deepak kumar</h2>
             <p>Hello everyone i am a graphics designer and web designer</p>
             <p>

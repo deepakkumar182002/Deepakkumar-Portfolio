@@ -312,10 +312,16 @@ hr {
   top: 10px;
   left: 10px;
   height: 200px;
-  border-radius: 10px;
   width: 500px;
-  background:#fff ;
+  border-radius: 10px;
+  background:#ffffff25 ;
+  /* backdrop-filter: blur(10px); */
   
+}
+.img-details:hover{
+  cursor: pointer;
+  box-shadow: 0 0 20px 5px rgba(106, 105, 105, 0.916);
+  transition: .2s;
 }
 #dpk-img {
   height: 150px;
@@ -328,13 +334,13 @@ hr {
   text-align: center;
 }
 .prsonal-info li{
-display: flex;
+  display: flex;
 position: relative;
 top: 30px;
 left: -10px;
 flex-direction: row;
 font-weight: 500;
-color: black;
+color: white;
 font-size: 1em;
 list-style: none;
 word-spacing:1px;
@@ -351,13 +357,18 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   position: absolute;
   height: 300px;
   width: 500px;
-  background: #fff;
+  background: #ffffff25;
   top: 220px;
   border-radius: 10px;
   left: 10px;
   flex-direction: row;
-  color: black; 
+  color: white; 
   /* padding: 10px; */
+}
+.language-info:hover{
+  cursor: pointer;
+  box-shadow: 0 0 20px 5px rgba(106, 105, 105, 0.916);
+  transition: .2s;
 }
 .icon-c{
   top: 60px;
@@ -374,7 +385,7 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   text-align: center;
   line-height: 3;
   font-weight: 500;
-  background-color: #dee4e4dc;
+  background-color: #ffffff25;
   /* border-radius:10px ; */
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -391,10 +402,15 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   font-weight: 500;
   text-align: center;
   line-height: 3;
-  background: #c8c9c9;
+  background: #ffffff25;
   /* margin: 0.5em; */
   /* padding: 10px 10px ; */
 }
+  .L-icon:hover{
+    box-shadow: 0 0 15px 5px rgba(190, 190, 190, 0.68);
+    background: #ffffff88;
+    transition: .5s;
+  }
 /* .text-content {
   display: flex;
   flex-direction: column;
@@ -403,6 +419,36 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   position: relative;
   top: 40px;
 } */
+
+/* container for about page */
+.about-container{
+  display: flex;
+  position: absolute;
+  background: #ffffff25;
+  width: 835px;
+  height: 510px;
+  top: -268px;
+  left: 510px;
+  border-radius: 10px;
+}
+.about-container .about-text{
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff25;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 2.5;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+.p-text{
+  padding: 10px 10px ;
+  font-size: 1.1em;
+  position: absolute;
+  top: 100px;
+}
 .third-container .circle1 {
   height: 200px;
   width: 200px;
