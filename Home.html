@@ -10,6 +10,7 @@
   <script src="./Home.html"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
   <!-- <link rel="stylesheet" href="./heex.css"> -->
+  <link rel="stylesheet" media="screen and (max-width:823px)" href="./responsive.css">
 </head>
 <body>
   <!-- jquery animation -->
@@ -38,12 +39,12 @@
     })(jQuery);
 
     // for scrolling the perticuller id
-    $('li').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
+    $('li').click(function () {
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+      }, 500);
+      return false;
+    });
   </script>
   <div class="container">
     <div class="header fixed">
@@ -72,94 +73,142 @@
       </ul>
     </nav>
     <section class="first-container">
-      <img class="f-background-img" src="/images/backgroun image.jpg" alt="" />
-      <h2 class="intro-text">I am Deepak kumar</h2>
+      <div class="f-background-img"></div>
+      <div class="intro-text">I am Deepak kumar
+      </div>
       <div class="animated-text"></div>
       <!-- <div class="f-left-container"></div>
-          <div class="f-right-container"></div> -->
+          <div cla0ss="f-right-container"></div> -->
     </section>
-    <hr />
     <section class="second-container">
       <div class="s-left-container"></div>
       <div class="s-right-container">
         <h2>Welcome to the <b> DeepGFX.</b></h2>
-        <p>
-          Hello i am Deepak kumar and. I am a graphics designer and web
-          designer. i am a two year experience in graphics design and website
-          design. I have create interactice and creative templates.
-        </p>
+        <div class="text-content">
+          <p>
+            Hello i am Deepak kumar and. I am a graphics designer and web
+            designer. i am a two year experience in graphics design and website
+            design. I have create interactice and creative templates.
+          </p>
+        </div>
       </div>
     </section>
+    <hr />
     <section class="third-container">
-      <div class="circle1"></div>
+      <!-- <div class="circle1"></div>
       <div class="circle2"></div>
       <div class="circle3"></div>
       <div class="circle4"></div>
       <div class="circle5"></div>
-      <div class="circle6"></div>
-      <div class="overview" id="overview">
+      <div class="circle6"></div> -->
 
-        <div class="img-details">
-          <img src="/images/Deepak photo.jpg" id="dpk-img" width="150px" height="150px" alt="Deepak" />
-          <ul class="prsonal-info">
-            <li><span>Name : </span> Deepak kumar</li>
-            <li><span>Profile :</span> Software developer</li>
-            <li><span>Email :</span> kumar041232@gmai.com</li>
-            <li><span>Phone :</span> ..........</li>
-          </ul>
+
+      <div class="overview">
+            <div class="skills">Skills</div>
+            <div class="icon-c">
+              <div style="color: rgb(255, 102, 0);" class="L-icon" id="icons1">
+                <i class="fa-brands fa-html5 fa-flip"></i>
+                <span>HTML</span>
+              </div>
+
+              <div style="color: rgb(0, 140, 255);" class="L-icon" id="icons2">
+                <i class="fa-brands fa-css3-alt fa-flip"></i>
+                <span>CSS</span>
+              </div>
+              <div style="color: rgb(236, 189, 3);" class="L-icon" id="icons3">
+                <i class="fa-brands fa-js fa-flip"></i>
+                <span>Javascript</span>
+
+              </div>
+              <div style="color: rgb(122, 182, 219);" class="L-icon" id="icons4">
+                <i class="fa-brands fa-quinscape fa-flip"></i>
+                <span>jQuery</span>
+              </div>
+              <div style="color: rgb(207, 88, 8);" class="L-icon" id="icons5">
+                <i class="fa-brands fa-git-alt fa-flip"></i>
+                <span>Git</span>
+              </div>
+              <div class="L-icon" id="icons6">
+                <i class="fa-brands fa-square-github fa-flip"></i>
+                <span>GitHub</span>
+              </div>
+              <div style="color: rgb(122, 182, 219);" class="L-icon" id="icons4">
+                <i class="fa-brands fa-quinscape fa-flip"></i>
+                <span>ReactJs</span>
+              </div>
+              <div style="color: rgb(207, 88, 8);" class="L-icon" id="icons5">
+                <i class="fa-brands fa-git-alt fa-flip"></i>
+                <span>API</span>
+              </div>
+              <div class="L-icon" id="icons6">
+                <i class="fa-brands fa-square-github fa-flip"></i>
+                <span>CDN</span>
+              </div>
+            </div>
         </div>
-        <div class="language-info">
-          <div class="skills">Skills</div>
-          <div class="icon-c">
-            <div style="color: rgb(255, 102, 0);" class="L-icon" id="icons1">
-              <i class="fa-brands fa-html5 fa-flip"></i>
-              <span>HTML</span>
-            </div>
 
-            <div style="color: rgb(0, 140, 255);" class="L-icon" id="icons2">
-              <i class="fa-brands fa-css3-alt fa-flip"></i>
-              <span>CSS</span>
-            </div>
-            <div style="color: rgb(236, 189, 3);" class="L-icon" id="icons3">
-              <i class="fa-brands fa-js fa-flip"></i>
-              <span>Javascript</span>
-
-            </div>
-            <div style="color: rgb(122, 182, 219);" class="L-icon" id="icons4">
-              <i class="fa-brands fa-quinscape fa-flip"></i>
-              <span>jQuery</span>
-
-            </div>
-            <div style="color: rgb(207, 88, 8);" class="L-icon" id="icons5">
-              <i class="fa-brands fa-git-alt fa-flip"></i>
-              <span>Git</span>
-            </div>
-            <div class="L-icon" id="icons6">
-              <i class="fa-brands fa-square-github fa-flip"></i>
-              <span>GitHub</span>
-            </div>
-
-            <div class="about-container">
+        <!-- <div class="about-container">
               <h2 class="about-text">About me</h2>
               <p class="p-text">
                 hey guys. I am Deepak kumar. I am a web designer and front-end developer, creating responsive, attractive, animated websites.
-I am two years of experience in web design, and I have worked in many projects, 
+                I am two years of experience in web design, and I have worked in many projects, 
               </p>
 
             </div>
     </section>
-    <!-- <div class="text-content">
+    <div class="text-content">
             <h2>Deepak kumar</h2>
             <p>Hello everyone i am a graphics designer and web designer</p>
             <p>
               and i am create interactive and creative websites and templates
             </p>
           </div> -->
-    <section class="forth-container">
-
-
-    </section>
-  </div>
+          
+          
+        </section>
+      </div>
+      <section class="forth-container">
+        <footer class="site-footer">
+          <div class="footer-logo">
+            <img src="./images/startup icon.png" alt="E-Commerce Logo">
+          </div>
+          <div class="footer-links">
+            <ul class="about">
+              <li class="fo-headings"><span>About</span></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About </a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="about">
+              <li class="fo-headings"><span>About</span></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact </a></li>
+            </ul>
+            <ul class="about">
+              <li class="fo-headings"><span>home</span></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About </a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="about">
+              <li class="fo-headings"><span>Home</span></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About </a></li>
+              <li><a href="#">Contact </a></li>
+            </ul>
+          </div>
+          <div class="footer-disclaimer">
+            &copy; 2023 Your E-Commerce Store. All rights reserved.
+          </div>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-square-instagram" style="color:  #fd1ea4;"></i>Instagram</a>
+            <a href="#"><i class="fa-brands fa-linkedin" style="color: #384ef1;"></i>LinkedIn</a>
+            <a href="#"><i class="fa-brands fa-square-twitter" style="color: #3db5ff;"></i>Twitter</a>
+            <a href="#"></i><i class="fa-brands fa-square-facebook" style="color: #1e77fd;"></i>Facebook</a>
+          </div>
+        </footer>
+      </section>
 
   <script src="./home.js"></script>
 </body>
