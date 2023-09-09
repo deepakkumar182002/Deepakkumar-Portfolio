@@ -13,7 +13,9 @@
   .icons {
     display: none;
   }
+  
   .first-container .intro-text {
+    transition: 1s;
     font-size: 3rem;
     font-weight: 700;
     display: flex;
@@ -68,3 +70,4 @@
     padding: 7px 130px;
     color: #fff;
   }
+
